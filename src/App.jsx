@@ -8,7 +8,7 @@ import Achievements from './components/Achievements';
 import Experience from './components/Experience';
 import CodingProfiles from './components/CodingProfiles';
 import Contact from './components/Contact';
-import AIChatbot from './components/AIChatbot';
+
 import TechOrbit from './components/TechOrbit';
 
 function App() {
@@ -50,7 +50,7 @@ function App() {
         <Contact />
       </main>
 
-      <AIChatbot />
+
       
       <footer className="py-12 border-t border-white/5 text-center text-slate-500 glass">
         <p>© {new Date().getFullYear()} Raghav V. Built with React & Framer Motion.</p>
