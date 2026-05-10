@@ -65,13 +65,13 @@ const Contact = () => {
               </p>
 
               <div className="space-y-6 mb-12">
-                <a href="mailto:raghav.v2024aids@sece.ac.com" className="flex items-center gap-4 group">
+                <a href="mailto:raghav.v2024aids@sece.ac.in" className="flex items-center gap-4 group">
                   <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:border-primary/50 transition-colors">
                     <Mail className="text-primary" />
                   </div>
                   <div>
                     <p className="text-xs text-slate-500 uppercase font-bold tracking-widest">Email</p>
-                    <p className="text-lg text-slate-300 group-hover:text-white">raghav.v2024aids@sece.ac.com</p>
+                    <p className="text-lg text-slate-300 group-hover:text-white">raghav.v2024aids@sece.ac.in</p>
                   </div>
                 </a>
 
