@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0B0F19;
+  --color-primary: #00E5FF;
+  --color-accent: #7C4DFF;
+  --color-surface: rgba(17, 25, 40, 0.75);
+  
+  --animate-glow: glow 2s ease-in-out infinite alternate;
+  --animate-orbit: orbit 20s linear infinite;
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes glow {
+    0% { box-shadow: 0 0 5px rgba(0, 229, 255, 0.2); }
+    100% { box-shadow: 0 0 20px rgba(0, 229, 255, 0.6); }
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: #f1f5f9;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+.glass {
+  background-color: var(--color-surface);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-card {
+  background-color: var(--color-surface);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  border-color: rgba(0, 229, 255, 0.5);
+}
+
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, var(--color-primary), var(--color-accent));
+}
+
+.btn-primary {
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  background-color: rgba(0, 229, 255, 0.1);
+  border: 1px solid rgba(0, 229, 255, 0.5);
+  color: var(--color-primary);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+}
+
+.btn-secondary {
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  background-color: rgba(124, 77, 255, 0.1);
+  border: 1px solid rgba(124, 77, 255, 0.5);
+  color: var(--color-accent);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(124, 77, 255, 0.2);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 229, 255, 0.5);
+}
+
+.bg-grid {
+  background-size: 50px 50px;
+  background-image: 
+    linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+}
