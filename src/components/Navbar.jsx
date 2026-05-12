@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Cpu, Code2, Rocket, Award, Briefcase, User, Mail, BarChart3 } from 'lucide-react';
 
 const navLinks = [
-  { name: 'Hero', href: '#hero', icon: <Rocket size={18} /> },
+  { name: 'Intro', href: '#intro', icon: <Rocket size={18} /> },
   { name: 'About', href: '#about', icon: <User size={18} /> },
   { name: 'Skills', href: '#skills', icon: <Code2 size={18} /> },
   { name: 'Projects', href: '#projects', icon: <Cpu size={18} /> },
