@@ -21,7 +21,7 @@ const projects = [
       'Automated alert system'
     ],
     github: 'https://github.com/VRaghav1806/cybershield.git',
-    demo: '#',
+    demo: 'https://cybershield-murex.vercel.app/',
     icon: <Shield className="text-primary" />
   },
   {
